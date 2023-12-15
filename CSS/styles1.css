@@ -3,8 +3,6 @@ body {
   font-family: "Notable", sans-serif;
   margin: 0;
   padding: 0;
-
-  
 }
 
 .navbar {
@@ -34,7 +32,7 @@ body {
   padding: 10%;
 }
 
-#image{
+#image {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -44,10 +42,10 @@ body {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    margin-bottom: O;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin-bottom: O;
 }
 .text-overlay {
   position: absolute;
@@ -55,7 +53,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white; 
+  color:rgba(191,149,75,255);
 }
 
 .text-overlay h2 {
@@ -66,77 +64,40 @@ img {
 .text-overlay p {
   font-size: 1.2em;
   margin: 0;
+  padding: 20px;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 40px;
 }
 
-
-
-.affiche-container{
-display: grid;
-gap: 30px;
-margin-top: 20px;
-padding: 30px;
- grid-template-columns: repeat(3, 1fr);
-
-
-
+.affiche-container {
+  display: grid;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.affiche{
-  width: 518px;
-  height: 358px;
-  border-radius: 30px;
-}
-
-
-
-
-footer {
-  background-color: black;
-  opacity: 0.90;
-  color: #fff;
+.affiche {
+ 
   text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
-
-
-@media screen and (max-width: 768px) {
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links li a {
-    padding: 10px;
-  }
-.image-container{
-  display: flex;
-  justify-content: center;
-  height: 0.1%;
-  padding: 20px;
-
+.affiche img {
+  max-width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  height: 358px;
 }
-.text-overlay{
-  font-size: 0.8em;
-}
-.affiche-container{
-  grid-template-columns: repeat(2, 1fr);
-}
+.affiche h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
 }
 #avatar {
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-content: center;
 }
-
-
 
 .avatar {
   width: 150px;
@@ -155,12 +116,86 @@ footer {
   border-radius: 50%;
   border: 2px solid white;
   background-color: blue;
-  background-image: url("/Images/.jpg");
+  background-image: url("/Images/Roger\ Moore.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 480px) {
+.avatar3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: blue;
+  background-image: url("/Images/George\ Lazenby.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.avatar4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: blue;
+  background-image: url("/Images/Timothy\ dalton.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.avatar5 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: blue;
+  background-image: url("/Images/Pierce\ Brosman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.avatar6 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: blue;
+  background-image: url("/Images/Daniel\ Craig.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer {
+  background-color: black;
+  opacity: 0.9;
+  color:rgba(191,149,75,255);
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
 
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li a {
+    padding: 10px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    height: 0.1%;
+    padding: 20px;
+  }
+  .text-overlay {
+    font-size: 0.8em;
+  }
+  .affiche-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 480px) {
   .nav-links {
     flex-direction: column;
     align-items: center;
@@ -169,22 +204,19 @@ footer {
   .nav-links li a {
     padding: 5px;
   }
-.image-container{
-  display: flex;
-  justify-content: center;
-  height: 0.1%;
-  padding: 20px;
-
+  .image-container {
+    display: flex;
+    justify-content: center;
+    height: 0.1%;
+    padding: 20px;
+  }
+  .text-overlay {
+    font-size: 0.4em;
+  }
+  .affiche-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    font-size: 0.8em;
+  }
 }
-.text-overlay{
-  font-size: 0.4em;
-}
-.affiche-container{
-  grid-template-columns: repeat(2, 1fr);
-}
-footer{
-  font-size: 1em;
-}
-}
-
- 
