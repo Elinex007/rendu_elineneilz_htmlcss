@@ -53,7 +53,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color:rgba(191,149,75,255);
+  color: rgba(191, 149, 75, 255);
 }
 
 .text-overlay h2 {
@@ -80,7 +80,6 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 .affiche {
- 
   text-align: center;
 }
 .affiche img {
@@ -93,82 +92,66 @@ h1 {
   font-size: 15px;
   color: black;
 }
+
 #avatar {
-  padding: 30px;
+  padding: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-color: blue;
-  background-image: url("/Images/Sean\ Connery.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.avatar-container {
+  text-align: center;
 }
 
-.avatar2 {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-color: blue;
-  background-image: url("/Images/Roger\ Moore.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.avatar3 {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-color: blue;
-  background-image: url("/Images/George\ Lazenby.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.avatar4 {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-color: blue;
-  background-image: url("/Images/Timothy\ dalton.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.avatar5 {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-color: blue;
-  background-image: url("/Images/Pierce\ Brosman.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.avatar,
+.avatar2,
+.avatar3,
+.avatar4,
+.avatar5,
 .avatar6 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   border: 2px solid white;
   background-color: blue;
-  background-image: url("/Images/Daniel\ Craig.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-right: 20px; 
 }
+
+.avatar {
+  background-image: url("/Images/Sean\ Connery.jpg");
+}
+
+.avatar2 {
+  background-image: url("/Images/Roger\ Moore.jpg");
+}
+
+.avatar3 {
+  background-image: url("/Images/George\ Lazenby.png");
+}
+.avatar4 {
+  background-image: url("/Images/Timothy\ dalton.jpg");
+}
+.avatar5 {
+  background-image: url("/Images/Pierce\ Brosman.jpg");
+}
+.avatar6 {
+  background-image: url("/Images/Daniel\ Craig.jpg");
+}
+
+
 footer {
   background-color: black;
   opacity: 0.9;
-  color:rgba(191,149,75,255);
+  color: rgba(191, 149, 75, 255);
   text-align: center;
   padding: 10px;
   position: relative;
   bottom: 0;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -193,7 +176,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 @media screen and (max-width: 480px) {
   .nav-links {
