@@ -71,7 +71,11 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
-
+h2{
+  text-align: center;
+  font-size: 25px;
+  color:rgba(191, 149, 75, 255);
+}
 .affiche-container {
   display: grid;
   gap: 30px;
@@ -92,26 +96,61 @@ h1 {
   font-size: 15px;
   color: black;
 }
-
-#avatar {
-  padding: 50px;
+.personnages{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
 }
 
-.avatar-container {
-  text-align: center;
+.avatar {
+  padding: 30px;
 }
 
-.avatar,
+.avatar-name {
+  text-align:center;
+}
+
+.avatar1,
 .avatar2,
 .avatar3,
 .avatar4,
 .avatar5,
-.avatar6 {
+.avatar6,
+.avatar7,
+.avatar8,
+.avatar9,
+.avatar10,
+.avatar11,
+.avatar12,
+.avatar13,
+.avatar14,
+.avatar15,
+.avatar16,
+.avatar17,
+.avatar18,
+.avatar19,
+.avatar20,
+.avatar21,
+.avatar22,
+.avatar23, 
+.avatar24,
+.avatar25,
+.avatar26,
+.avatar27,
+.avatar28,
+.avatar29,
+.avatar30,
+.avatar31,
+.avatar32,
+.avatar33,
+.avatar34,
+.avatar35,
+.avatar36,
+.avatar37,
+.avatar38,
+.avatar39,
+.avatar40{
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -119,10 +158,10 @@ h1 {
   background-color: blue;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
-.avatar {
+.avatar1 {
   background-image: url("/Images/Sean\ Connery.jpg");
 }
 
@@ -142,6 +181,146 @@ h1 {
 .avatar6 {
   background-image: url("/Images/Daniel\ Craig.jpg");
 }
+.avatar7 {
+  background-image: url("/Images/Ursula\ Andress.JPG");
+}
+.avatar8 {
+  background-image: url("/Images/Halle\ berry.jpg");
+}
+.avatar9 {
+  background-image: url("/Images/Eva\ green.jpeg");
+}
+.avatar10 {
+  background-image: url("/Images/Léa\ Seydoux.JPG");
+}
+.avatar11 {
+  background-image: url("/Images/Monica\ Bellucci.jpg");
+}
+.avatar12 {
+  background-image: url("/Images/Jane\ Seymour.jpg");
+  
+}
+.avatar13 {
+  background-image: url("/Images/Carole\ Bouquet.jpg");
+  
+}
+.avatar14 {
+  background-image: url("/Images/Ana\ de\ Armas.jpg");
+  
+}
+.avatar15 {
+  background-image: url("/Images/Sophie\ Marceau.jpg");
+  
+}
+.avatar16 {
+  background-image: url("/Images/Kim\ Basinger.jpg");
+  
+}
+.avatar17 {
+  background-image: url("/Images/Berenice\ Marlohe.jpg");
+  
+}
+.avatar18 {
+  background-image: url("/Images/Michelle\ Yeoh.jpeg");
+  
+}
+.avatar19 {
+  background-image: url("/Images/Maud\ Adams.jpg");
+  
+}
+.avatar20 {
+  background-image: url("/Images/olga\ kurylenko.jpg");
+  
+}
+.avatar21 {
+  background-image: url("/Images/Grace\ Jones.jpg");
+  
+}
+.avatar22 {
+  background-image: url("/Images/Bernard\ Lee.png");
+  
+}
+.avatar23 {
+  background-image: url("/Images/Robert\ brown.jpg");
+  
+}
+.avatar24 {
+  background-image: url("/Images/Judi\ Dench.jpg");
+  
+}
+.avatar25 {
+  background-image: url("/Images/Peter\ Burton.jpg");
+  
+}
+.avatar26 {
+  background-image: url("/Images/Desmond\ llewelyn.jpg");
+  
+}
+.avatar27 {
+  background-image: url("/Images/John\ Cleese.jpg");
+  
+}
+.avatar28 {
+  background-image: url("/Images/Ben\ whishaw.webp");
+  
+}
+.avatar29 {
+  background-image: url("/Images/lois\ maxwell.jpg");
+  
+}
+.avatar30 {
+  background-image: url("/Images/Caroline\ Bliss.jpg");
+  
+}
+.avatar31 {
+  background-image: url("/Images/Samantha\ Bond.jpg");
+  
+}
+.avatar32 {
+  background-image: url("/Images/Naomie\ Harry.jpg");
+  
+}
+.avatar33 {
+  background-image: url("/Images/Jack_Lord.jpg");
+  
+}
+.avatar34 {
+  background-image: url("/Images/Cec\ Linder.jpg");
+  
+}
+.avatar35 {
+  background-image: url("/Images/Rik\ Van\ Nutter.jpg");
+  
+}
+.avatar36 {
+  background-image: url("/Images/Norman\ Burton.jpg");
+  
+}
+.avatar37 {
+  background-image: url("/Images/David\ Hedison.jpg");
+  
+}
+.avatar38 {
+  background-image: url("/Images/Bernie\ Casey.jpg");
+  
+}
+.avatar39 {
+  background-image: url("/Images/John\ Terry.jpg");
+  
+}
+.avatar40 {
+  background-image: url("/Images/Jeffrey\ wright.jpg");
+  
+}
+h5{
+  text-align: center;
+}
+h3{
+  text-align: center;
+  font-size: 20px;
+}
+
+
 
 
 footer {
@@ -175,6 +354,17 @@ footer {
   .affiche-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  h1 {
+    font-size: 20px;
+  }
+  h2{
+  text-align: center;
+  font-size: 20px;
+  color:rgba(191, 149, 75, 255);
+}
+h5{
+  text-align: center;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -201,4 +391,12 @@ footer {
   footer {
     font-size: 0.8em;
   }
+  h1 {
+    font-size: 15px;
+  }
+  h2{
+  text-align: center;
+  font-size: 12px;
+  color:rgba(191, 149, 75, 255);
+}
 }
