@@ -71,10 +71,10 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
-h2{
+h2 {
   text-align: center;
   font-size: 25px;
-  color:rgba(191, 149, 75, 255);
+  color: rgba(191, 149, 75, 255);
 }
 .affiche-container {
   display: grid;
@@ -96,7 +96,7 @@ h2{
   font-size: 15px;
   color: black;
 }
-.personnages{
+.personnages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -108,7 +108,7 @@ h2{
 }
 
 .avatar-name {
-  text-align:center;
+  text-align: center;
 }
 
 .avatar1,
@@ -133,7 +133,7 @@ h2{
 .avatar20,
 .avatar21,
 .avatar22,
-.avatar23, 
+.avatar23,
 .avatar24,
 .avatar25,
 .avatar26,
@@ -150,7 +150,15 @@ h2{
 .avatar37,
 .avatar38,
 .avatar39,
-.avatar40{
+.avatar40,
+.avatar41,
+.avatar42,
+.avatar43,
+.avatar44,
+.avatar45,
+.avatar46,
+.avatar47,
+.avatar48 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -198,130 +206,144 @@ h2{
 }
 .avatar12 {
   background-image: url("/Images/Jane\ Seymour.jpg");
-  
 }
 .avatar13 {
   background-image: url("/Images/Carole\ Bouquet.jpg");
-  
 }
 .avatar14 {
   background-image: url("/Images/Ana\ de\ Armas.jpg");
-  
 }
 .avatar15 {
   background-image: url("/Images/Sophie\ Marceau.jpg");
-  
 }
 .avatar16 {
   background-image: url("/Images/Kim\ Basinger.jpg");
-  
 }
 .avatar17 {
   background-image: url("/Images/Berenice\ Marlohe.jpg");
-  
 }
 .avatar18 {
   background-image: url("/Images/Michelle\ Yeoh.jpeg");
-  
 }
 .avatar19 {
   background-image: url("/Images/Maud\ Adams.jpg");
-  
 }
 .avatar20 {
   background-image: url("/Images/olga\ kurylenko.jpg");
-  
 }
 .avatar21 {
   background-image: url("/Images/Grace\ Jones.jpg");
-  
 }
 .avatar22 {
   background-image: url("/Images/Bernard\ Lee.png");
-  
 }
 .avatar23 {
   background-image: url("/Images/Robert\ brown.jpg");
-  
 }
 .avatar24 {
   background-image: url("/Images/Judi\ Dench.jpg");
-  
 }
 .avatar25 {
   background-image: url("/Images/Peter\ Burton.jpg");
-  
 }
 .avatar26 {
   background-image: url("/Images/Desmond\ llewelyn.jpg");
-  
 }
 .avatar27 {
   background-image: url("/Images/John\ Cleese.jpg");
-  
 }
 .avatar28 {
   background-image: url("/Images/Ben\ whishaw.webp");
-  
 }
 .avatar29 {
   background-image: url("/Images/lois\ maxwell.jpg");
-  
 }
 .avatar30 {
   background-image: url("/Images/Caroline\ Bliss.jpg");
-  
 }
 .avatar31 {
   background-image: url("/Images/Samantha\ Bond.jpg");
-  
 }
 .avatar32 {
   background-image: url("/Images/Naomie\ Harry.jpg");
-  
 }
 .avatar33 {
   background-image: url("/Images/Jack_Lord.jpg");
-  
 }
 .avatar34 {
   background-image: url("/Images/Cec\ Linder.jpg");
-  
 }
 .avatar35 {
   background-image: url("/Images/Rik\ Van\ Nutter.jpg");
-  
 }
 .avatar36 {
   background-image: url("/Images/Norman\ Burton.jpg");
-  
 }
 .avatar37 {
   background-image: url("/Images/David\ Hedison.jpg");
-  
 }
 .avatar38 {
   background-image: url("/Images/Bernie\ Casey.jpg");
-  
 }
 .avatar39 {
   background-image: url("/Images/John\ Terry.jpg");
-  
 }
 .avatar40 {
   background-image: url("/Images/Jeffrey\ wright.jpg");
-  
 }
-h5{
+.avatar41 {
+  background-image: url("/Images/Anthony\ Dawson.png");
+}
+.avatar42 {
+  background-image: url("/Images/Donald\ Pleasence.jpg");
+}
+.avatar43 {
+  background-image: url("/Images/Telly\ Savalas.jpg");
+}
+.avatar44 {
+  background-image: url("/Images/Charles\ Gray.jpg");
+}
+.avatar45 {
+  background-image: url("/Images/John\ hollis.jpg");
+}
+.avatar46 {
+  background-image: url("/Images/Robert\ Rietty.jpg");
+}
+.avatar47 {
+  background-image: url("/Images/max\ von\ sydow.jpg");
+}
+.avatar48 {
+  background-image: url("/Images/Christoph\ waltz\ .jpg");
+}
+h5 {
   text-align: center;
 }
-h3{
+h3 {
   text-align: center;
   font-size: 20px;
 }
-
-
-
+h6 {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(191, 149, 75, 255);
+  padding: 10px;
+}
+p {
+  text-align: center;
+  font-size: 12px;
+}
+.vehicules {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.vehicules img {
+  width: 596px;
+  height: 358px;
+  border-radius: 10px 10px 10px 10px;
+}
 
 footer {
   background-color: black;
@@ -357,14 +379,19 @@ footer {
   h1 {
     font-size: 20px;
   }
-  h2{
-  text-align: center;
-  font-size: 20px;
-  color:rgba(191, 149, 75, 255);
-}
-h5{
-  text-align: center;
-}
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    color: rgba(191, 149, 75, 255);
+  }
+  h5 {
+    text-align: center;
+  }
+  .vehicules img {
+    width: 496px;
+    height: 258px;
+    border-radius: 10px 10px 10px 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -394,9 +421,14 @@ h5{
   h1 {
     font-size: 15px;
   }
-  h2{
-  text-align: center;
-  font-size: 12px;
-  color:rgba(191, 149, 75, 255);
-}
+  h2 {
+    text-align: center;
+    font-size: 12px;
+    color: rgba(191, 149, 75, 255);
+  }
+  .vehicules img {
+    width: 396px;
+    height: 158px;
+    border-radius: 10px 10px 10px 10px;
+  }
 }
