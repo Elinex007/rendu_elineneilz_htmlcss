@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMES BOND 007</title>
+    <link rel="stylesheet" href="/CSS/styles1.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+                <div class="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="films.html">FILMS</a></li>
+                <li><a href="characters.html">CHARACTERS</a></li>
+                <li><a href="vehicules.html">VEHICULES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="message-error">
+        <ul></ul>
+    </div>
+    <div class="message-success">
+        Formulaire envoyé avec succès !
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+
+        <div>
+            <label for="lastname">Nom</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+
+        <div>
+            <label for="gender">Genre</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Homme</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Femme</label>
+        </div>
+
+        <button type="submit">S'incrire</button>
+    </form>
+    <footer>
+        <p>&copy; 2023 James Bond. Tous droits réservés.</p>
+        <p class="toggle-dark-mode">Mode sombre</p>
+    
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

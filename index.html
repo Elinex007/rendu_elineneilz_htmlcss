@@ -5,19 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAMES BOND 007</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/CSS/styles1.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
+            <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <ul class="nav-links">
                 <li><a href="films.html">FILMS</a></li>
                 <li><a href="characters.html">CHARACTERS</a></li>
                 <li><a href="vehicules.html">VEHICULES</a></li>
+                <li><a href="formulaire.html">FORMULAIRE</a></li>
             </ul>
         </nav>
     </header>
+    <div class="swiper mon-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-007">
+                <p class="subtitle">007</p>
+                <p class="title">NO TIME TO DIE</p>
+            </div>
+
+            <div class="swiper-slide slide-VEH">
+                <p class="subtitle">VEHICULES</p>
+                <p class="title">ASTON MARTIN DB5</p>
+            </div>
+
+            <div class="swiper-slide slide-PROMO">
+                <p class="subtitle">PROMO</p>
+                <p class="title">Representation</p>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
     <main>
         <div class="image-container">
             <img src="/Images/1200px-007_Logo.svg.png" alt="logo">
@@ -39,10 +70,16 @@
                 </p>
             </div>
         </div>
+
+
     </main>
     <footer>
         <p>&copy; 2023 James Bond. Tous droits réservés.</p>
+        <p class="toggle-dark-mode">Mode sombre</p>
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

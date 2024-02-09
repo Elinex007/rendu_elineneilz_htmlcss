@@ -11,10 +11,16 @@
 <body>
     <header>
         <nav class="navbar">
+                <div class="burger-menu">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="characters.html">CHARACTERS</a></li>
                 <li><a href="vehicules.html">VEHICULES</a></li>
+                <li><a href="formulaire.html">FORMULAIRE</a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +54,7 @@
                 </div>
                 <div class="affiche">
                     <img src="/Images/7.jpg" alt="Affiche James Bond 6">
-                    <h2>Les diamants sont éternels (1971</h2>
+                    <h2>Les diamants sont éternels (1971)</h2>
                 </div>
                 <div class="affiche">
                     <img src="/Images/8.jpg" alt="Affiche James Bond 7">
@@ -134,11 +140,52 @@
         </div>
 
 
+        <h2>ANECDOTES</h2>
+        
+        <div class="tabs-container">
+            <ul class="tabs">
+                <li class="tab tab-active tab-1971">Les diamants sont éternels (1971)</li>
+                <li class="tab tab-1985">Dangereusement vôtre (1985)</li>
+                <li class="tab tab-1996">Demain ne meurt jamais (1996)</li>
+                <li class="tab tab-2012">Skyfall (2012)</li>
+            </ul>
+            <div class="content content-1971 active">
+                <h2>Les diamants sont éternels (1971)</h2>
+                <p>Malheureusement, le succès du dernier opus Au service secret de sa Majesté n'est pas au rendez-vous. Les producteurs
+                portent la faute sur George Lazenby, et font de nouveau appel à Sean Connery, qui avait décidé de raccrocher son costume
+                d'agent secret, pour sauver la franchise. L'acteur Britannique accepte après avoir négocié 1,25 millions de dollars pour
+                reprendre le rôle et un pourcentage de la recette du film. À noter que Les diamants sont éternels est le premier Bond à
+                avoir été tourné à Hollywood.</p>
+            </div>
+            <div class="content content-1985">
+                <h2>Dangereusement vôtre (1985)</h2>
+                <p>Le casting de Dangereusement vôtre compte un parterre de personnalités cinq étoiles. En top list, le top Grace Jones
+                (troisième James Bond girl de couleur noire), interprète de la mystérieuse et puissante May Day, qui n'a pas hésité à
+                donner de sa personne pour le rôle. Lors de la scène d'ouverture, juste avant le générique, l'actrice a effectué
+                elle-même l'incroyable saut de la Tour Eiffel, soit une chute de trois mètres amortie par un amat de cartons. Une icône.</p>
+            </div>
+            <div class="content content-1996">
+                <h2>Demain ne meurt jamais (1996)</h2>
+                <p>C'est une drôle d'anecdote que cache l'opus Demain ne meurt jamais ("Tomorrow never dies"). Le film n'aurait jamais dû
+                avoir ce titre, mais aurait dû s'appeler Demain ne ment jamais ("Tomorrow never lies"). La raison? Une erreur dans le
+                script où le mot “lies” fut remplacé par “dies”. Agréablement surpris, la production a décidé d'opter pour ce titre.</p>
+            </div>
+            <div class="content content-2012">
+                <h2>Skyfall (2012)</h2>
+                <p>Pendant le tournage de la scène du casino flottant à Macao, Daniel Craig a fait une demande plutôt spéciale à Sam Mendes
+                : de porter une nouvelle paire de gants qu'il venait de s'offrir, ce que le réalisateur accepta. Cependant, lors du
+                montage des scènes, Sam Mendes s'est rendu compte que James Bond se sert d'un pistolet qui scanne la paume de main. De
+                ce fait, les gants ont du être effacés numériquement, ce qui a coûté des millions de dollars.</p>
+            </div>
+        </div>
+
 
     </main>
     <footer>
         <p>&copy; 2023 James Bond. Tous droits réservés.</p>
+        <p class="toggle-dark-mode">Mode sombre</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

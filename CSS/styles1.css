@@ -5,6 +5,18 @@ body {
   padding: 0;
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger-menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+
 .navbar {
   background-color: black;
   overflow: hidden;
@@ -23,6 +35,43 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.swiper-slide {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  padding-left: 20px;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.slide-007 {
+  background-image: url("/Images/teaser_1_web21.jpeg.avif");
+  background-size: cover;
+}
+
+.slide-VEH {
+  background-image: url("/Images/Aston_Martin_DB5.jpeg");
+  background-size: cover;
+}
+
+.slide-PROMO {
+  background-image: url("/Images/james-bond-no-time-to-die.jpeg");
+  background-size: cover;
 }
 
 .image-container {
@@ -58,13 +107,50 @@ img {
 
 .text-overlay h2 {
   font-size: 2em;
-  margin-bottom: 10px;
 }
 
 .text-overlay p {
   font-size: 1.2em;
-  margin: 0;
+}
+
+.tabs-container {
+  margin-top: 20px;
+}
+
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab-active {
+  background-color: rgba(191, 149, 75, 255);
+  color: white;
+}
+
+.content {
+  display: none;
   padding: 20px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.content.active {
+  display: block;
 }
 
 h1 {
@@ -344,6 +430,61 @@ p {
   height: 358px;
   border-radius: 10px 10px 10px 10px;
 }
+form {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+}
+
+form > div {
+  margin: 38px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+}
+
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+
+.message-error {
+  border: 1px solid rgb(212, 42, 0);
+  color: rgb(212, 42, 0);
+  background-color: rgba(212, 42, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.message-error.visible {
+  display: block;
+}
+
+.message-success {
+  border: 1px solid rgb(81, 150, 2);
+  color: rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+  padding: 16px 32px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success {
+  border: 1px solid rgb(81, 150, 2);
+  background-color: rgba(113, 212, 0, 0.4);
+}
+
+.message-success.visible {
+  display: block;
+}
 
 footer {
   background-color: black;
@@ -354,16 +495,73 @@ footer {
   position: relative;
   bottom: 0;
 }
+body.dark {
+  background-color: rgb(37, 37, 37);
+  color: #ddd;
+}
+
+.dark .navbar {
+  background-color: rgb(61, 61, 61);
+}
+
+.dark .nav-links li a {
+  color: #ddd;
+}
+
+.dark .text-overlay h2 {
+  color: #ddd;
+}
+
+.dark .text-overlay p {
+  color: #ddd;
+}
+.dark .affiche h2 {
+  color: #ddd;
+}
+
+.dark .tabs {
+  background-color: black;
+}
+
+.dark .tab:hover {
+  background-color: gray;
+}
+
+.dark footer {
+  background-color: rgb(61, 61, 61);
+  color: #ddd;
+}
 
 @media screen and (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+
   .nav-links {
+    display: none;
     flex-direction: column;
     align-items: center;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
   }
 
   .nav-links li a {
-    padding: 10px;
+    color: white;
+    text-decoration: none;
   }
+
+  .nav-links.active {
+    display: flex;
+  }
+
   .image-container {
     display: flex;
     justify-content: center;
